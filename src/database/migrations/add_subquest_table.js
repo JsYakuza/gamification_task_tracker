@@ -1,0 +1,9 @@
+export const ADD_SUBQUEST_TABLE = `
+ CREATE TABLE IF NOT EXISTS subquest (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    quest_id INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    is_completed INTEGER DEFAULT 0,
+    FOREIGN KEY (quest_id) REFERENCES quests(id) ON DELETE CASCADE
+ );
+`;
