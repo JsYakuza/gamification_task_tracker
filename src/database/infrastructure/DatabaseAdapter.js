@@ -22,4 +22,4 @@ class DatabaseAdapter {
   }
 }
 
-export const dbAdapter = new DatabaseAdapter();
+export const Adapter = new DatabaseAdapter();
